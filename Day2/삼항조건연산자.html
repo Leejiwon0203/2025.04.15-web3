@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항조건 연산자</title>
+</head>
+<body>
+    <script>
+        // 조건식? 맞으면 이게 출력됨(true) : 틀리면 이게 출력됨(false)
+
+        let a = 1;
+        let b = 2;
+
+        let result = a < b ? "고양이" : "강아지";
+        console.log(result); // true이기 때문에 고양이가 출력된다.
+
+        // 적정 체중 계산법 : 적정체중 = (신장 - 100) * 0.9
+        let userHeight = 160
+        let userWeight = 50;
+        let standardWeight = (userHeight - 100) * 0.9; // 54kg
+        console.log(standardWeight); // 54kg
+
+        let name = prompt("당신의 이름을 입력 해주세요.");
+        let age = prompt("당신의 키는 몇 cm입니까?", "숫자만 입력해주세요");
+        let weight = prompt("당신의 몸무게는 몇 kg입니까?", "숫자만 입력해주세요");
+        console.log(name)
+        console.log(age)
+        console.log(weight)
+        
+        standardWeight = (height - 100) * 0.9; // 54kg
+        result = standardWeight - weight > 0 ? "과체중입니다." : "정상체중입니다.";
+    </script>
+</body>
+</html>

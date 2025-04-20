@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대입 연산자</title>
+</head>
+<body>
+    <script>
+        // a = b : b를 a에 대입
+        // a += b : a = a + b 더한 것을 대입
+        // a -= b : a = a - b 빼는 것을 대입
+        // a *= b : a = a * b 곱한 것을 대입
+        // a /= b : a = a / b 나눈 것을 대입
+        // a %= b : a = a % b 나눈 나머지를 대입
+        // a **= b : a = a ** b 제곱한 것을 대입
+        // a //= b : a = a // b 나눈 몫을 대입
+
+        let a = 10;
+        let b = 3;
+
+        a += b; // a = a + b
+        // 13 = 10 + 3
+        console.log(a); // a 값은 13
+
+        a -= b; // a = a - b
+        console.log(a); // a 값은 10
+        // 위의 더하기 값 때문에 a는 13이 아니라 10으로 나옴
+
+        a *= b; // a = a * b
+        console.log(a); // a 값은 30
+        
+        a /= b; // a = a / b
+        console.log(a); // a 값은 10
+
+        a %= b; // a = a % b
+        console.log(a); // a 값은 1
+    </script>
+</body>
+</html>

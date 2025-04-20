@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리 연산자</title>
+</head>
+<body>
+    <script>
+        // 피연산자란? 연산 대상 데이터로 하나의 값으로는 비교를 할 수 없으니 비교할 대상을 피연산자라고 한다.
+        // 단항 연산자란? 피연산자가 필요 없이 한개의 값으로 정의할 수 있는 연산자
+
+        // ||(or) : 피연산자중 값이 하나라도 true이면 true를 반환한다. \+shift임
+        // &&(and) : 피연산자중 값이 하나라도 faulse가 존재한다면 false로 결과값을 반환한다. (모두 true여야 true로 반환된다.)
+        // !(not) : 값이 true면 false로 바꿔준다.
+        
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        let d = 40;
+        let result;
+
+        result = a > b || b >= c || c > d; // false || false || true
+        console.log(result); // flase
+
+        result = a <= b && b >= c && c <= d; // true && false && true
+        console.log(result); // false
+
+        result = a <= b && b <= c && c <= d; // true && true && true
+        console.log(result); // true
+
+        result = !(a > b); // !false
+        console.log(result); // true
+        // a가 b보다 크지 않다라는 의미로 해석된다. 즉 a는 10이고 b는 20이기 때문에 true로 반환된다.
+    </script>
+</body>
+</html>
