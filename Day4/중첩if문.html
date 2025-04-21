@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩if문</title>
+</head>
+<body>
+    <script>
+        /*
+            if(조건식 1) {
+                javaScript 코드
+                if(조건식 2) {
+                    javaScript 코드 }
+            }    
+        */
+
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        if (a < b) {
+            document.write("1차 관문 조건이 참입니다<br>");
+            if (b < c) {
+                document.write("2차 관문 조건이 참입니다<br>");
+            }
+        }
+
+        /*
+            변수에 id와 password를 지정해놓을 것
+            사용자에게 아이디와 비밀번호를 입력받을것
+            만약 설정해놓은 아이디와 입력 받은 아이디가 같으면 비밀번호를 검사할 수 있는 기회를 줌
+
+            아이디와 비밀번호가 모두 일치할 경우 id님 반갑습니다! 출력
+
+            비밀번호가 일치하지 않을 경우 비밀번호가 일치하지 않습니다. 출력
+
+            아이디가 일치하지 않을 경우 아이디가 일치하지 않습니다. 출력
+        */
+
+        let id = "jiwon";
+        let password = "1234";
+        // if (id === prompt("아이디를 입력하세요")) {
+        //     if (password === prompt("비밀번호를 입력하세요")) {
+        //         document.write(id + "님 반갑습니다!<br>");
+        //     } else {
+        //         alert("비밀번호가 일치하지 않습니다");
+        //         // 확인 버튼만 존재하는 경고창
+        //         location.reload();
+        //     }
+        // } else {
+        //     alert("아이디가 일치하지 않습니다");
+        //     location.reload();
+        //     // 확인 버튼을 누르면 새로고침이 되는 경고창
+        // }
+
+        let userId = prompt("아이디를 입력하세요");
+
+        if (id !== userId) {
+            alert("아이디가 일치하지 않습니다.");
+            location.reload();
+        } else {
+            let userPassword = prompt("비밀번호를 입력하세요");
+
+            if (password == userPassword) {
+                document.write(id + "님 반갑습니다!<br>");
+            } else {
+                alert("비밀번호가 일치하지 않습니다.");
+                location.reload(); 
+            }
+         }
+        // 위랑 똑같이 적용되지만, 만약 아이디 비밀번호 둘다 입력하고 알려주기 위해서는 let userPassword를 userId와 같이 미리 선언해놓고 사용해야 한다.
+    </script>
+</body>
+</html>
