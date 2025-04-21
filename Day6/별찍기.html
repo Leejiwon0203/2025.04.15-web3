@@ -7,7 +7,25 @@
 </head>
 <body>
     <script>
-        
+        for(let i = 5; i >= 1; i--) {
+            for(let j = 1; j <= i; j++) {
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+        //대입 연산자
+
+        for(let i = 0; i < 7; i++) {
+            let space = ' ';
+            for(let j = 0; j < 7 - i; j++) {
+                space += ' ';
+            }
+            for(let k = 0; k < (2*i)+1; k++){
+                space += '*';
+            }
+            console.log(space);
+        }
     </script>
 </body>
 </html>

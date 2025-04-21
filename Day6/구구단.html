@@ -9,9 +9,10 @@
     <script>
          // 출력 시 es6문법으로 작성하기
 
-         for(let i = 1; i <= 9; i++) {
-            for(let j = 1; j <= 9; i++) {
-                document.write(`${i}X ${j}=${i*j} <br>`)
+         for(let i = 2; i <= 9; i++) {
+            document.write(`<h2>${i}단</h2>`)
+            for(let j = 1; j <= 9; j++) {
+                document.write(`${i} X ${j} = ${i*j} <br>`)
             }
          }
     </script>
